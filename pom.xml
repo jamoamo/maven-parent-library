@@ -42,14 +42,14 @@
          <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.10.0</version>
+            <version>5.10.1</version>
             <scope>test</scope>
             <type>jar</type>
          </dependency>
          <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
-            <version>5.5.0</version>
+            <version>1.10.19</version>
             <scope>test</scope>
             <type>jar</type>
          </dependency>
@@ -62,7 +62,7 @@
          <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>
-            <version>4.8.0</version>
+            <version>4.8.2</version>
          </dependency>
          <dependency>
             <groupId>org.slf4j</groupId>
@@ -77,7 +77,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
-            <version>3.3.0</version>
+            <version>3.3.1</version>
             <configuration>
                <configLocation>checkstyle-library.xml</configLocation>
                <encoding>UTF-8</encoding>
@@ -98,14 +98,14 @@
                <dependency>
                   <groupId>io.github.jamoamo</groupId>
                   <artifactId>checkstyle-config</artifactId>
-                  <version>3.0</version>
+                  <version>3.1</version>
                </dependency>
             </dependencies>
          </plugin>
          <plugin>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-maven-plugin</artifactId>
-            <version>4.7.3.6</version>
+            <version>4.8.1.0</version>
             <configuration>
                <xmlOutput>true</xmlOutput>
                <xmlOutputDirectory>target/${spotbugs.outputdirectory}</xmlOutputDirectory>
@@ -123,7 +123,7 @@
          <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.10</version>
+            <version>0.8.11</version>
             <executions>
                <execution>
                   <goals>
@@ -156,7 +156,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.6.0</version>
+            <version>3.6.2</version>
             <executions>
                <execution>
                   <id>attach-javadocs</id>
@@ -187,7 +187,7 @@
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-clean-plugin</artifactId>
-               <version>3.3.1</version>
+               <version>3.3.2</version>
             </plugin>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
@@ -207,7 +207,7 @@
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-project-info-reports-plugin</artifactId>
-               <version>3.4.5</version>
+               <version>3.5.0</version>
             </plugin>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
@@ -223,12 +223,12 @@
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-surefire-plugin</artifactId>
-               <version>3.1.2</version>
+               <version>3.2.2</version>
                <dependencies>
                   <dependency>
                      <groupId>org.junit.jupiter</groupId>
                      <artifactId>junit-jupiter-engine</artifactId>
-                     <version>5.10.0</version>
+                     <version>5.10.1</version>
                   </dependency>
                </dependencies>
             </plugin>
